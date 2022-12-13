@@ -22,7 +22,6 @@ namespace Winform.AutoSendSms
         List<string> lstContents = new List<string>();
         List<string> lstUId = new List<string>();
         ChromeDriver driver;
-
         public AutoSendSms()
         {
             InitializeComponent();
@@ -725,7 +724,5 @@ namespace Winform.AutoSendSms
             [Description("Lỗi")]
             Error = -1
         }
-
-       
     }
 }
