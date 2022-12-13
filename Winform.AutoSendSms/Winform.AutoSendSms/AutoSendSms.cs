@@ -203,7 +203,7 @@ namespace Winform.AutoSendSms
                                                 foreach (var item in lstImages)
                                                 {
                                                     Thread.Sleep(new Random().Next(1000, 3000));
-                                                    driver.FindElement(By.ClassName("sx_c50cf4")).Click();
+                                                    driver.FindElement(By.ClassName("sx_56e74b")).Click();
                                                     Thread.Sleep(new Random().Next(1000, 3000));
                                                     SendKeys.SendWait(item);
                                                     Thread.Sleep(new Random().Next(1000, 3000));
@@ -262,7 +262,7 @@ namespace Winform.AutoSendSms
                                         foreach (var item in lstImages)
                                         {
                                             Thread.Sleep(new Random().Next(1000, 3000));
-                                            driver.FindElement(By.ClassName("sx_c50cf4")).Click();
+                                            driver.FindElement(By.ClassName("sx_56e74b")).Click();
                                             Thread.Sleep(new Random().Next(1000, 3000));
                                             SendKeys.SendWait(item);
                                             Thread.Sleep(new Random().Next(1000, 3000));
@@ -327,7 +327,7 @@ namespace Winform.AutoSendSms
                                                     foreach (var item in lstImages)
                                                     {
                                                         Thread.Sleep(new Random().Next(1000, 3000));
-                                                        driver.FindElement(By.ClassName("sx_c50cf4")).Click();
+                                                        driver.FindElement(By.ClassName("sx_56e74b")).Click();
                                                         Thread.Sleep(new Random().Next(1000, 3000));
                                                         SendKeys.SendWait(item);
                                                         Thread.Sleep(new Random().Next(1000, 3000));
@@ -385,7 +385,7 @@ namespace Winform.AutoSendSms
                                             foreach (var item in lstImages)
                                             {
                                                 Thread.Sleep(new Random().Next(1000, 3000));
-                                                driver.FindElement(By.ClassName("sx_c50cf4")).Click();
+                                                driver.FindElement(By.ClassName("sx_56e74b")).Click();
                                                 Thread.Sleep(new Random().Next(1000, 3000));
                                                 SendKeys.SendWait(item);
                                                 Thread.Sleep(new Random().Next(1000, 3000));
@@ -451,6 +451,7 @@ namespace Winform.AutoSendSms
         {
             driver.Close();
             driver.Quit();
+            driver.Dispose();
         }
         private void ShowNotify(string message, int type)
         {
