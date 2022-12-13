@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Winform.AutoSendSms.exe" version="1.0.0.13" publicKeyToken="a735a8a1b06b1896" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="unnamed.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Winform.AutoSendSms" version="1.0.0.14" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Winform.AutoSendSms.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WebDriver.dll" size="8937472">
+      <assemblyIdentity name="WebDriver" version="4.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>5GSbMKQD/bHOkwkgq1IUYcPGGor0HzH7LsBAv56gD1E=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WebDriver.Support.dll" size="35328">
+      <assemblyIdentity name="WebDriver.Support" version="4.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>gujPhQYLQUvq2Dujlahe+g+5uHvTav5oqKL05BX5yAw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Winform.AutoSendSms.exe" size="74176">
+      <assemblyIdentity name="Winform.AutoSendSms" version="1.0.0.14" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>S1r0MqLnRjvhOxogDnkg6uD8YltItVKXjIuKHJ2WIeg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="chromedriver.exe" size="12358144">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>k68QBQWxkiY9jbo7nXNei6gDzljEXwsb7p7+U6Psgxs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="unnamed.ico" size="15259">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>YOuKIC5+5FN6+RrUsOzD3/u9P5H0Q0b7hnNEdrIqgkA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Winform.AutoSendSms.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>6N7MliNbVJSIAIPrecIshMbZ7zEoKLr5SQvud4LDUOw=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DOANDONG\Bao Bao" issuerKeyHash="aef7cfcb9d1b7d654d484a063e28e3a9f2ae1fd0" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>ZHJfe8QnoOLi1LRy3rahp0tFnptf+nHK9eNN3pODZLI=</DigestValue></Reference></SignedInfo><SignatureValue>eIpJZxjpJlndvIrQyTQT54n3rLzCdew1/3ymlBGffjjK8a4ZQ81xXdugciJp1OyfmKbZPsONE7TmasDQA5/j2YW8FzjHZGoQG1gAVomjXyB8nHpqoJFGjv6ziaNAH5A0Txl7K00LfB8a0hdsBUPIWo4+UcoluSurViHuENOhpcA=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>uXqTIaEqUac9TqOgw0Q6znCeXIuH3EZoYFa1jgLXRqN8JEypswT50HjxicCYMS6i2W/EZ/p6On6+o+61D0R9T8nIDxi4g5Qm7UZzGD7kKQPLaPacYnP0Q1eXaWxZ7kucb8fkTcLOGcuz6NsGlp9VDy55u1fsD/fkHVlumSK+PF0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="b2648393de4de3f5ca71fa5f9b9e454ba7a1b6de72b4d4e2e2a027c47b5f7264" Description="" Url=""><as:assemblyIdentity name="Winform.AutoSendSms.exe" version="1.0.0.13" publicKeyToken="a735a8a1b06b1896" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DOANDONG\Bao Bao</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>iy4Fr28NTpMzCI5wchEIrSsr3/oFtfDQHnyKYDHgvRU=</DigestValue></Reference></SignedInfo><SignatureValue>CizjHXOIbLGMEo5WXgQL1q/k1DwLUAAznyDdXN/dcNsWnG2ua3kEkZyQMSkzPXr5aTqrfZO8ItVXYOZFxag0JYYqR1UKXnt0jHjPojH1JOHvQ9ioOGidWUfCaC+ttWziGUgQlQHZ3OL95o5qmt8JsIlOsmp1+v865NrLU6U69F0=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>uXqTIaEqUac9TqOgw0Q6znCeXIuH3EZoYFa1jgLXRqN8JEypswT50HjxicCYMS6i2W/EZ/p6On6+o+61D0R9T8nIDxi4g5Qm7UZzGD7kKQPLaPacYnP0Q1eXaWxZ7kucb8fkTcLOGcuz6NsGlp9VDy55u1fsD/fkHVlumSK+PF0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB2TCCAUKgAwIBAgIQG/oCiz6VmLhDdW5L7Xqg1zANBgkqhkiG9w0BAQsFADArMSkwJwYDVQQDHiAARABPAEEATgBEAE8ATgBHAFwAQgBhAG8AIABCAGEAbzAeFw0yMjEyMTMwNzE2NDJaFw0yMzEyMTMxMzE2NDJaMCsxKTAnBgNVBAMeIABEAE8AQQBOAEQATwBOAEcAXABCAGEAbwAgAEIAYQBvMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC5epMhoSpRpz1Oo6DDRDrOcJ5ci4fcRmhgVrWOAtdGo3wkTKmzBPnQePGJwJgxLqLZb8Rn+no6fr6j7rUPRH1PycgPGLiDlCbtRnMYPuQpA8to9pxic/RDV5dpbFnuS5xvx+RNws4Zy7Po2waWn1UPLnm7V+wP9+QdWW6ZIr48XQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBACnwY0TGuWdOQMt4xcTTiSDqJPMlClvZRFAqTWHELSksAeL60x4Qp1mEQmJCzVDWETJW3F9zKMovqFPvXuiEgISC/nGEqGwNtcF9kRvEcNANH6YsAu+qiV01WY6rnKG5pGCg1CeJMqWmXCX5D+vrULq2wRTJ5XfBQrJHZGHNSWxW</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
