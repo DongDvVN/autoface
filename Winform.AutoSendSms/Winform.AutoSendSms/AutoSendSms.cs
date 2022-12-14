@@ -144,9 +144,11 @@ namespace Winform.AutoSendSms
                         ShowNotify("Sai tài khoản hoặc mật khẩu", (int)TypeNotify.Error);
                     else
                     {
-                        //if (driver.Url.Contains("checkpoint"))
-                        //    ShowNotify("Sai tài khoản hoặc mật khẩu", (int)TypeNotify.Error);
-
+                        if (driver.Url.Contains("checkpoint"))
+                        {
+                            ShowNotify("Bảo mật 2 lớp, nhập mã vào Face. Hệ thống dừng 3 phút rồi chạy tiếp", (int)TypeNotify.Error);
+                            Thread.Sleep(1000 * 3 * 60); // nghỉ 3 phút rồi cạy tiếp
+                        }
                         if (typeFanpage == (int)TypeFanpage.FanpagePro5)
                         {
                             //vào fanpage

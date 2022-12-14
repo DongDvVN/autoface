@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{FDEC92EB-4A75-48E4-9407-8AFFF8EB5376}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Winform.AutoSendSms</RootNamespace>
+    <RootNamespace>Biglead.Autoinbox</RootNamespace>
     <AssemblyName>Winform.AutoSendSms</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -28,7 +28,7 @@
     <InstallUrl>https://raw.githubusercontent.com/DongDvVN/autoface/main/published/</InstallUrl>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>15</ApplicationRevision>
+    <ApplicationRevision>16</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -67,7 +67,7 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>unnamed.ico</ApplicationIcon>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -109,6 +109,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -139,6 +140,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="chromedriver.exe" />
+    <Content Include="favicon.ico" />
     <Content Include="unnamed.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

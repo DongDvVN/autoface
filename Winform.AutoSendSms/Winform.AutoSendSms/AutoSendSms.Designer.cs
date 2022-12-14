@@ -39,6 +39,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnConfirm = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.rdFanpageOld = new System.Windows.Forms.RadioButton();
             this.label16 = new System.Windows.Forms.Label();
             this.txtNumberInbox = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
@@ -61,7 +62,6 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.rdFanpageOld = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.imgLogo)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -189,6 +189,18 @@
             this.groupBox1.Size = new System.Drawing.Size(642, 725);
             this.groupBox1.TabIndex = 41;
             this.groupBox1.TabStop = false;
+            // 
+            // rdFanpageOld
+            // 
+            this.rdFanpageOld.AutoSize = true;
+            this.rdFanpageOld.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdFanpageOld.Location = new System.Drawing.Point(68, 256);
+            this.rdFanpageOld.Name = "rdFanpageOld";
+            this.rdFanpageOld.Size = new System.Drawing.Size(133, 28);
+            this.rdFanpageOld.TabIndex = 42;
+            this.rdFanpageOld.TabStop = true;
+            this.rdFanpageOld.Text = "Fanpage Cũ";
+            this.rdFanpageOld.UseVisualStyleBackColor = true;
             // 
             // label16
             // 
@@ -418,18 +430,6 @@
             this.label1.Size = new System.Drawing.Size(441, 29);
             this.label1.TabIndex = 40;
             this.label1.Text = "Gửi tin nhắn tự động Fanpage Facebook";
-            // 
-            // rdFanpageOld
-            // 
-            this.rdFanpageOld.AutoSize = true;
-            this.rdFanpageOld.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdFanpageOld.Location = new System.Drawing.Point(68, 256);
-            this.rdFanpageOld.Name = "rdFanpageOld";
-            this.rdFanpageOld.Size = new System.Drawing.Size(133, 28);
-            this.rdFanpageOld.TabIndex = 42;
-            this.rdFanpageOld.TabStop = true;
-            this.rdFanpageOld.Text = "Fanpage Cũ";
-            this.rdFanpageOld.UseVisualStyleBackColor = true;
             // 
             // AutoSendSms
             // 
