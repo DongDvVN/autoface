@@ -32,10 +32,10 @@ namespace Winform.AutoSendSms
             imgLogo.SizeMode = PictureBoxSizeMode.AutoSize;
 
             #region Cập nhập phiên bản
-            //System.Reflection.Assembly assembly = System.Reflection.Assembly.GetExecutingAssembly();
-            //System.Diagnostics.FileVersionInfo fvi = System.Diagnostics.FileVersionInfo.GetVersionInfo(assembly.Location);
-            //string version = fvi.FileVersion;
-            //txtVersion.Text = "Version: " + version;
+            System.Reflection.Assembly assembly = System.Reflection.Assembly.GetExecutingAssembly();
+            System.Diagnostics.FileVersionInfo fvi = System.Diagnostics.FileVersionInfo.GetVersionInfo(assembly.Location);
+            string version = fvi.FileVersion;
+            txtVersion.Text = "Version: " + version;
             #endregion
         }
         private void AutoSendSMS_FormClosing(object sender, FormClosingEventArgs e)
