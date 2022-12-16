@@ -103,11 +103,16 @@ namespace Winform.AutoSendSms
                 ShowNotify("Vui lòng nhập Link Fanpage", (int)TypeNotify.Error);
             else if (string.IsNullOrEmpty(content))
                 ShowNotify("Vui lòng nhập nội dung muốn gửi", (int)TypeNotify.Error);
-            else if (!string.IsNullOrEmpty(date))
+            else if (!string.IsNullOrEmpty(date) && date.Length != 10)
+                ShowNotify("Thời gian sai định dạng", (int)TypeNotify.Error);
+            else if (string.IsNullOrEmpty(amountInbox))
+                ShowNotify("Vui lòng nhập số lượng tin nhắn muốn gửi", (int)TypeNotify.Error);
+            else if (!IsNumber(amountInbox))
+                ShowNotify("Vui lòng nhập số lượng tin nhắn muốn gửi là số", (int)TypeNotify.Error);
+            #endregion
+            else
             {
-                if (date.Length != 10)
-                    ShowNotify("Thời gian sai định dạng", (int)TypeNotify.Error);
-                else
+                if (!string.IsNullOrEmpty(date))
                 {
                     try
                     {
@@ -119,14 +124,7 @@ namespace Winform.AutoSendSms
                         ShowNotify("Thời gian sai định dạng", (int)TypeNotify.Error);
                     }
                 }
-            }
-            else if (string.IsNullOrEmpty(amountInbox))
-                ShowNotify("Vui lòng nhập số lượng tin nhắn muốn gửi", (int)TypeNotify.Error);
-            else if (!IsNumber(amountInbox))
-                ShowNotify("Vui lòng nhập số lượng tin nhắn muốn gửi là số", (int)TypeNotify.Error);
-            #endregion
-            else
-            {
+
                 if (content.Contains("|"))
                 {
                     lstContents = new List<string>();
